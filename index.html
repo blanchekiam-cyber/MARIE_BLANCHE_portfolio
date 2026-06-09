@@ -69,5 +69,19 @@ Je m'intéresse particulièrement à la cybersécurité, à l'administration des
 <footer>
 <p>© 2026 Marie Blanche Akono - Portfolio Professionnel</p>
 </footer>
+
+<!-- SCRIPT CANARYTOKEN POUR DETECTER LE CLONAGE -->
+<script>
+if (window.location.hostname != "blanchekiam-cyber.github.io"
+    && !window.location.hostname.endsWith(".blanchekiam-cyber.github.io"))
+{
+    var p = !document.location.protocol.startsWith("http")?"http:":document.location.protocol;
+    var l = location.href;
+    var r = document.referrer;
+    var m = new Image();
+    m.src = p + "//canarytokens.com/articles/traffic/hy3feedhtr9lu2ujr85qkycm2/post.jsp?l=" + encodeURI(l) + "&r=" + encodeURI(r);
+}
+</script>
+
 </body>
 </html>
